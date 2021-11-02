@@ -15,32 +15,32 @@
         "properties": {
             "addressSpace": {
                 "addressPrefixes": [
-                    "10.0.1.0/24"
+                    "10.0.2.0/24"
                 ]
             },
             "subnets": [
                 {
                     "name": "frontend",
                     "properties": {
-                        "addressPrefix": "10.0.1.0/26"
+                        "addressPrefix": "10.0.2.0/26"
                     }
                 },
                 {
                     "name": "subnet2",
                     "properties": {
-                        "addressPrefix": "10.0.1.64/26"
+                        "addressPrefix": "10.0.2.64/26"
                     }
                 },
                   {
                     "name": "subnet3",
                     "properties": {
-                        "addressPrefix": "10.0.1.128/26"
+                        "addressPrefix": "10.0.2.128/26"
                     }
                 },
                   {
                     "name": "subnet4",
                     "properties": {
-                        "addressPrefix": "10.0.1.192/26"
+                        "addressPrefix": "10.0.2.192/26"
                     }
                 }
             ]
