@@ -1,0 +1,50 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [{
+        "name": "supriya-vnet",
+        "type": "Microsoft.Network/virtualNetworks",
+        "apiVersion": "2019-11-01",
+        "location": "Eastus",
+        "tags": {
+            "displayName": "supriya-vnet"
+        },
+        "properties": {
+            "addressSpace": {
+                "addressPrefixes": [
+                    "10.0.2.0/24"
+                ]
+            },
+            "subnets": [
+                {
+                    "name": "frontend",
+                    "properties": {
+                        "addressPrefix": "10.0.2.0/26"
+                    }
+                },
+                {
+                    "name": "subnet2",
+                    "properties": {
+                        "addressPrefix": "10.0.2.64/26"
+                    }
+                },
+                  {
+                    "name": "subnet3",
+                    "properties": {
+                        "addressPrefix": "10.0.2.128/26"
+                    }
+                },
+                  {
+                    "name": "subnet4",
+                    "properties": {
+                        "addressPrefix": "10.0.2.192/26"
+                    }
+                }
+            ]
+        }
+    }],
+    "outputs": {}
+}
